@@ -3,10 +3,8 @@ import java.util.Scanner;
 public class GradingSystem {
 
 	public static void main(String[] args) {
-		try (// input - don't change this code
-		Scanner scn = new Scanner(System.in)) {
+		try (Scanner scn = new Scanner(System.in)) {
 			int marks = scn.nextInt();
-			// input - don't change this code
 
 			if (marks > 90) {
 				System.out.println("excellent");
