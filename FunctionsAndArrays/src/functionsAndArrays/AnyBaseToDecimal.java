@@ -8,6 +8,7 @@ public class AnyBaseToDecimal {
 		Scanner scn = new Scanner(System.in);
 		int n = scn.nextInt();
 		int b = scn.nextInt();
+		scn.close();
 		int d = getValueIndecimal(n, b);
 		System.out.println(d);
 	}
