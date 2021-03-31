@@ -22,6 +22,7 @@ public class PrintAllSubarrays {
 		}
 	}
 }
+// Logic for this code
 /*
  * For example if we take 10, 20, 30
  * the pointer i will pick the main group i.e whether to start from 10, 20 or 30
