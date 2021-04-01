@@ -6,7 +6,7 @@ package multiDimensionArrays;
 
 import java.util.Scanner;
 
-public class multiDimensionArrayDemo {
+public class MultiDimensionArrayDemo {
 
 	public static void main(String[] args) {
 		Scanner scn = new Scanner(System.in);
