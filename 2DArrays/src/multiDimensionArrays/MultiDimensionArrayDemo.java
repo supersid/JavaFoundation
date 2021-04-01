@@ -18,6 +18,7 @@ public class MultiDimensionArrayDemo {
 				arr[i][j] = scn.nextInt();
 			}
 		}
+		scn.close();
 		display2DArray(arr);
 	}
 
