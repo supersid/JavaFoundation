@@ -12,6 +12,7 @@ public class TargetSumSubsets {
 			arr[i] = scn.nextInt();
 		}
 		int tar = scn.nextInt();
+		scn.close();
 		printTargetSumSubsets(arr, 0, "", 0, tar);
 	}
 
