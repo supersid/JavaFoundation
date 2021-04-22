@@ -12,6 +12,7 @@ public class FibonacciDP {
 		System.out.print(f);
 	}
 
+	// Fibonacci memoized 
 	public static int fibonacci(int n, int[] qb) {
 		if (n == 0 || n == 1) {
 			return n;
