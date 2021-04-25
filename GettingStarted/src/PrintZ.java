@@ -1,4 +1,4 @@
-
+//code to print letter 'Z' using * and spaces
 public class PrintZ {
 
 	public static void main(String[] args) {
