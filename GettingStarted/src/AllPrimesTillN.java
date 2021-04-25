@@ -15,9 +15,8 @@ public class AllPrimesTillN {
 						break;
 					}
 				}
-				if (count == 0) // In this question only prime number(s) will be printed.
+				if (count == 0) // In this question only prime number
 					System.out.println(i);
-
 			}
 		}
 	}
