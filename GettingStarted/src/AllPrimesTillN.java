@@ -4,8 +4,8 @@ public class AllPrimesTillN {
 
 	public static void main(String[] args) {
 		try (Scanner scn = new Scanner(System.in)) {
-			int low = scn.nextInt();
-			int high = scn.nextInt();
+			int low = scn.nextInt(); // Starting point or lower limit to check for prime number
+			int high = scn.nextInt(); // End point or upper limit to check for prime number
 
 			for (int i = low; i <= high; i++) {
 				int count = 0;
@@ -15,7 +15,7 @@ public class AllPrimesTillN {
 						break;
 					}
 				}
-				if (count == 0)
+				if (count == 0) // In this question only prime number(s) will be printed.
 					System.out.println(i);
 
 			}
