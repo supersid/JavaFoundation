@@ -1,4 +1,9 @@
-
+//  Print the pattern shown below
+//	1	
+//	1		1	
+//	1		2		1	
+//	1		3		3		1	
+//	1		4		6		4		1
 /**The trick to solve this question is know about combination
  * the formula used in this question is 
  * >> nCr+1 = nCr*(n-r)/r+1
@@ -8,7 +13,7 @@ package patterns;
 
 import java.util.Scanner;
 
-public class pattern13 {
+public class ElevensTriangle {
 
 	public static void main(String[] args) {
 		Scanner scn = new Scanner(System.in);
@@ -25,4 +30,3 @@ public class pattern13 {
 		}
 	}
 }
-
