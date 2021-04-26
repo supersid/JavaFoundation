@@ -1,8 +1,14 @@
+//  Print the pattern shown below
+//	*				*	
+//		*		*		
+//			*			
+//		*		*		
+//	*				*
 package patterns;
 
 import java.util.Scanner;
 
-public class pattern9 {
+public class X {
 
 	public static void main(String[] args) {
 		Scanner scn = new Scanner(System.in);
@@ -22,5 +28,4 @@ public class pattern9 {
 			System.out.println();
 		}
 	}
-
 }
