@@ -1,8 +1,14 @@
+//  Print the pattern shown below
+//			*	
+//		*		*	
+//	*				*	
+//		*		*	
+//			*	
 package patterns;
 
 import java.util.Scanner;
 
-public class pattern10 {
+public class Rhombus {
 
 	public static void main(String[] args) {
 		Scanner scn = new Scanner(System.in);
@@ -34,5 +40,4 @@ public class pattern10 {
 			System.out.println();
 		}
 	}
-
 }
