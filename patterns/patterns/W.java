@@ -1,10 +1,16 @@
+//  Print the pattern shown below
+//	*				*	
+//	*				*	
+//	*		*		*	
+//	*	*		*	*	
+//	*				*
 // Code to print 'W' using *
 
 package patterns;
 
 import java.util.Scanner;
 
-public class pattern20 {
+public class W {
 
 	public static void main(String[] args) {
 		Scanner scn = new Scanner(System.in);
