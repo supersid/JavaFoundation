@@ -1,8 +1,14 @@
+//  Print the pattern shown below
+//1								1	
+//1	2						2	1	
+//1	2	3				3	2	1	
+//1	2	3	4		4	3	2	1	
+//1	2	3	4	5	4	3	2	1
 package patterns;
 
 import java.util.Scanner;
 
-public class pattern16 {
+public class NumberHalfHollowDiamond {
 
 	public static void main(String[] args) {
 		Scanner scn = new Scanner(System.in);
@@ -20,7 +26,7 @@ public class pattern16 {
 			for (int j = 1; j <= space; j++) {
 				System.out.print("\t");
 			}
-			if(i == n) {
+			if (i == n) {
 				star--;
 				printVal--;
 			}
