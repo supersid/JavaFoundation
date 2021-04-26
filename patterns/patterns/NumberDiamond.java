@@ -1,8 +1,14 @@
+//  Print the pattern shown below
+//			1	
+//		2	3	2	
+//	3	4	5	4	3	
+//		2	3	2	
+//			1	
 package patterns;
 
 import java.util.Scanner;
 
-public class pattern15 {
+public class NumberDiamond {
 
 	public static void main(String[] args) {
 		Scanner scn = new Scanner(System.in);
