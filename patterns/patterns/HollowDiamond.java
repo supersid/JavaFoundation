@@ -1,8 +1,14 @@
+//  Print the pattern shown below
+//	*	*	*		*	*	*	
+//	*	*				*	*	
+//	*						*	
+//	*	*				*	*	
+//	*	*	*		*	*	*
 package patterns;
 
 import java.util.Scanner;
 
-public class pattern6 {
+public class HollowDiamond {
 
 	public static void main(String[] args) {
 		Scanner scn = new Scanner(System.in);
