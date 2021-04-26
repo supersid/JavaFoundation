@@ -1,8 +1,14 @@
+//  Print the pattern shown below
+//	*	*	*	*	*	
+//		*		*		
+//			*			
+//		*	*	*		
+//	*	*	*	*	*
 package patterns;
 
 import java.util.Scanner;
 
-public class pattern18 {
+public class HourGlass {
 
 	public static void main(String[] args) {
 		Scanner scn = new Scanner(System.in);
@@ -16,24 +22,23 @@ public class pattern18 {
 				System.out.print("\t");
 			}
 			for (int j = 1; j <= star; j++) {
-				if(i > 1 && i <= n/2 && j > 1 && j < star) {
+				if (i > 1 && i <= n / 2 && j > 1 && j < star) {
 					System.out.print("\t");
-				} else {					
+				} else {
 					System.out.print("*\t");
 				}
 			}
 			for (int j = 1; j <= space; j++) {
 				System.out.print("\t");
 			}
-			if(i <= n/2) {
+			if (i <= n / 2) {
 				space++;
-				star -=2;
+				star -= 2;
 			} else {
-				star +=2;
+				star += 2;
 				space--;
 			}
 			System.out.println();
 		}
 	}
-
 }
