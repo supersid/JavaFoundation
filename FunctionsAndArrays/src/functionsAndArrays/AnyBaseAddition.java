@@ -23,7 +23,7 @@ public class AnyBaseAddition {
 			int d2 = n2 % 10; // to get rightmost digit (1, 0, 0, 0)
 			int d = d1 + d2 + c; // sum of last digits of n1 and n2 with carry (8, 8, 8, 1)
 			c = d / b; // to calculate carry (1, 1, 1, 0)
-			rv = rv + place * (d % b); // value after addition (0, 10, 100, 1000)
+			rv = rv + place * (d % b); // value after addition (0, 0, 0, 1000)
 			place = place * 10; // (10, 100, 1000)
 			n1 = n1 / 10;
 			n2 = n2 / 10;
