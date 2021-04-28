@@ -1,3 +1,15 @@
+/*
+ * You are given a number n1, representing the size of array arr1.
+ * You are given n1 numbers, representing elements of array arr1.
+ * You are given a number n2, representing the size of array arr2.
+ * You are given n2 numbers, representing elements of array arr2.
+ * The two arrays represent digits of two numbers.
+ * You are required to add the numbers represented by two arrays and print the arrays.
+ */
+// Example - n1 = 5 Elements of arr1 = 3, 1, 0, 7, 5
+// Example - n2 = 6 Elements of arr1 = 1, 1, 1, 1, 1, 1
+// Output - 1, 4, 2, 1, 8, 6
+
 package functionsAndArrays;
 
 import java.util.Scanner;
@@ -29,16 +41,16 @@ public class SumOfTwoArrays {
 		int i = arr1.length - 1;
 		int j = arr2.length - 1;
 		int k = sum.length - 1;
-		while (k >= 0) {
-			int d = c;
-			if (i >= 0) {
+		while (k >= 0) { // loop for result array
+			int d = c; // variable d is the sum of 2 array number where carry value is assigned at each iteration.
+			if (i >= 0) { // till array1 is not complete
 				d = d + arr1[i];
 			}
-			if (j >= 0) {
+			if (j >= 0) { // till array2 is not complete
 				d = d + arr2[j];
 			}
-			c = d / 10;
-			d = d % 10;
+			c = d / 10; // carry (example 9 + 4 then c = 1)
+			d = d % 10; // remaining value (example 9 + 4 then d = 3)
 			sum[k] = d;
 			i--;
 			j--;
