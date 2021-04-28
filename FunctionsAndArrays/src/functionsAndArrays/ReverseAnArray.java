@@ -13,10 +13,12 @@ public class ReverseAnArray {
 		System.out.println(sb);
 	}
 
+	// reverse elements of array within same array
 	public static void reverse(int[] a) {
 		int start = 0;
 		int end = a.length - 1;
-		while(start <= end) {
+		while(start <= end) { // till you cross midpoints
+			// replace values of both pointers
 			int temp = a[start];
 			a[start] = a[end];
 			a[end] = temp;
@@ -33,7 +35,6 @@ public class ReverseAnArray {
 		for (int i = 0; i < n; i++) {
 			a[i] = Integer.parseInt(br.readLine());
 		}
-
 		reverse(a);
 		display(a);
 	}
