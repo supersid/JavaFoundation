@@ -1,3 +1,9 @@
+/*
+ * You are given a number n, representing the size of array arr.
+ * You are given n distinct numbers, representing elements of array arr.
+ * You are given another number d.
+ * You are required to check if d number exists in the array a and at what index (0 based). If found print the index, otherwise print -1.
+ */
 package functionsAndArrays;
 
 import java.util.Scanner;
@@ -20,7 +26,7 @@ public class FindElementInArray {
 		int index = -1;
 		for(int i = 0; i < arr.length; i++) {
 			if(arr[i] == d) {
-				index = i;
+				index = i; // check for entered number and then break the loop.
 				break;
 			}
 		}
