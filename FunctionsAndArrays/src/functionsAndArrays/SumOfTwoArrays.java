@@ -7,7 +7,7 @@
  * You are required to add the numbers represented by two arrays and print the arrays.
  */
 // Example - n1 = 5 Elements of arr1 = 3, 1, 0, 7, 5
-// Example - n2 = 6 Elements of arr1 = 1, 1, 1, 1, 1, 1
+// Example - n2 = 6 Elements of arr2 = 1, 1, 1, 1, 1, 1
 // Output - 1, 4, 2, 1, 8, 6
 
 package functionsAndArrays;
