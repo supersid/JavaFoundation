@@ -1,3 +1,15 @@
+/*
+ * Constraints
+ * 2 <= b <= 10
+ * 0 <= n1 <= 10000
+ * 0 <= n2 <= 10000
+ * 
+ * Logic
+ * 
+ * First multiply with single digit.
+ * Then shift the place using variable p
+ * The add all the values
+ */
 package functionsAndArrays;
 
 import java.util.Scanner;
@@ -31,7 +43,6 @@ public class AnyBaseMultiplication {
 		int rv = 0;
 		int c = 0;
 		int place = 1;
-
 		while (n1 > 0 || c > 0) {
 			int d1 = n1 % 10;
 			n1 = n1 / 10;
@@ -60,5 +71,4 @@ public class AnyBaseMultiplication {
 		}
 		return rv;
 	}
-
 }
