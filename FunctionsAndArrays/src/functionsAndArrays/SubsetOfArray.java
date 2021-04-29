@@ -3,6 +3,21 @@
  * Number of subsets is 2^n
  * Print blanks when there is 0 and value when value is 1
  */
+// Example 
+//	3
+//	10
+//	20
+//	30
+
+//Output
+//	-	-	-	
+//	-	-	30	
+//	-	20	-	
+//	-	20	30	
+//	10	-	-	
+//	10	-	30	
+//	10	20	-	
+//	10	20	30
 package functionsAndArrays;
 
 import java.util.Scanner;
@@ -18,21 +33,19 @@ public class SubsetOfArray {
 		}
 		scn.close();
 		int nofs = (int) Math.pow(2, n); // To calculate the number of subsets
-		
 		for (int i = 0; i < nofs; i++) {
 			String set = "";
-			int temp = i;
-			for(int j = a.length - 1; j >= 0; j--) {				
+			int temp = i; // so that it does not disturb the loop
+			for (int j = a.length - 1; j >= 0; j--) {
 				int d = temp % 2;
-				temp = temp/2;
-				
-				if(d == 0) {
+				temp = temp / 2;
+				if (d == 0) {
 					set = "-\t" + set;
 				} else {
 					set = a[j] + "\t" + set;
 				}
 			}
-			System.out.println(set);			
+			System.out.println(set);
 		}
 	}
 }
