@@ -1,3 +1,19 @@
+// Example input - n = 3, value = 10, 20, 30
+// Output
+//	10	
+//	10		20	
+//	10		20		30	
+//	20	
+//	20		30	
+//	30
+
+// Logic for this code
+/*
+ * For example if we take 10, 20, 30
+ * the pointer i will pick the main group i.e whether to start from 10, 20 or 30
+ * the pointer j will start from i to end of array
+ * the pointer k will work under j to print those values
+ */
 package functionsAndArrays;
 
 import java.util.Scanner;
@@ -22,10 +38,3 @@ public class PrintAllSubarrays {
 		}
 	}
 }
-// Logic for this code
-/*
- * For example if we take 10, 20, 30
- * the pointer i will pick the main group i.e whether to start from 10, 20 or 30
- * the pointer j will start from i to end of array
- * the pointer k will work under j to print those values
-*/
