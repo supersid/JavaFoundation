@@ -17,11 +17,10 @@ public class FirstIndexAndLastIndex {
 			arr[i] = scn.nextInt();
 		}
 		int d = scn.nextInt();
-
+		scn.close();
 		int l = 0;
 		int h = arr.length - 1;
 		int fi = -1;
-
 		while (l <= h) {
 			int m = (l + h) / 2;
 			if (d > arr[m]) {
@@ -29,15 +28,13 @@ public class FirstIndexAndLastIndex {
 			} else if (d < arr[m]) {
 				h = m - 1;
 			} else {
-				fi = m;
+				fi = m; // assigns potential value
 				h = m - 1;
 			}
 		}
-
 		l = 0;
 		h = arr.length - 1;
 		int li = -1;
-
 		while (l <= h) {
 			int m = (l + h) / 2;
 			if (d > arr[m]) {
@@ -45,7 +42,7 @@ public class FirstIndexAndLastIndex {
 			} else if (d < arr[m]) {
 				h = m - 1;
 			} else {
-				li = m;
+				li = m; // assigns potential value
 				l = m + 1;
 			}
 		}
