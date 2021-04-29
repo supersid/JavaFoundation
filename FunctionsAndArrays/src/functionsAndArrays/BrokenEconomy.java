@@ -40,13 +40,13 @@ public class BrokenEconomy {
 		int d = scn.nextInt();
 		scn.close();
 		for (int i = 0; i < arr.length; i++) {
-			if(arr[i] == d) {
-				System.out.println(arr[i]);
+			if (arr[i] == d) {
+				System.out.println(arr[i]); // if entered value matched with contents
 				break;
 			}
-			if(arr[i] > d) {
-				System.out.println(arr[i]);
-				System.out.println(arr[i - 1]);
+			if (arr[i] > d) {
+				System.out.println(arr[i]); // floor value compared to entered value
+				System.out.println(arr[i - 1]); // ceil value compared to entered value
 				break;
 			}
 		}
