@@ -1,3 +1,7 @@
+// Example
+// Input - n = 4 elements =  3, 12, 13, 15
+// Output
+// [12, 15]
 package stringsAndArraylist;
 
 import java.util.ArrayList;
@@ -27,7 +31,7 @@ public class RemovePrimes {
 
 	public static boolean isPrime(int n) {
 		for (int i = 2; i * i <= n; i++) {
-			if (n % i == 0) {
+			if (n % i == 0) { // if the entered number gets divide that means it is not a prime number
 				return false;
 			}
 		}
