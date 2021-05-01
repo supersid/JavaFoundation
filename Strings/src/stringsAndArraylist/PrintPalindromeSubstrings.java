@@ -18,6 +18,12 @@ public class PrintPalindromeSubstrings {
 	}	
 
 	public static boolean isPalindrome(String s) {
+		/*
+		 * Start the point from beginning and end
+		 * Compare values of both pointers
+		 * If value matches shift pointer or return false
+		 * The moment they cross each other end the iteration
+		 */
 		int i = 0;
 		int j = s.length() - 1;
 		while (i <= j) {
