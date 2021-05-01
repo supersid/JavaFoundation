@@ -1,3 +1,8 @@
+/*
+ * The logic to do this questions is
+ * First take the transpose of the matrix (interchange row and col like 1st row will become 1st col, 2nd row will become 2nd col... so on)
+ * Then travel row-wise and do a reverse
+ */
 package multiDimensionArrays;
 
 import java.util.Scanner;
@@ -13,6 +18,7 @@ public class RotateBy90Degree {
 				arr[i][j] = scn.nextInt();
 			}
 		}
+		scn.close();
 		display(rotate(arr));
 	}
 
@@ -23,7 +29,7 @@ public class RotateBy90Degree {
 
 	public static int[][] transpose(int[][] arr) {
 		for (int i = 0; i < arr.length; i++) {
-			for (int j = i; j < arr[0].length; j++) {
+			for (int j = i; j < arr[0].length; j++) { // the trick here is to target the upper triangle of the matrix
 				int temp = arr[i][j];
 				arr[i][j] = arr[j][i];
 				arr[j][i] = temp;
