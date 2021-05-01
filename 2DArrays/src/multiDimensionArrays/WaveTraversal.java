@@ -19,6 +19,11 @@ public class WaveTraversal {
 	}
 
 	public static void waveTraversal(int[][] arr, int n, int m) {
+		/*
+		 * The logic for this program is
+		 * When column is even the go top to bottom
+		 * When column is odd the go bottom to top
+		 */
 		for (int j = 0; j < arr[0].length; j++) {
 			if (j % 2 == 0) {
 				for (int i = 0; i < arr.length; i++) {
