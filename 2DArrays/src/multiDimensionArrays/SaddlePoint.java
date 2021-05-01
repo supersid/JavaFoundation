@@ -2,6 +2,7 @@
  * You are given a square matrix of size 'n'. You are given n*n elements of the square matrix. 
  * You are required to find the saddle price of the given matrix and print the saddle price. 
  * The saddle price is defined as the least price in the row but the maximum price in the column of the matrix.
+ * It is possible for a matrix to not have a saddle point. In that case print 'Invalid input'
  */
 package multiDimensionArrays;
 
