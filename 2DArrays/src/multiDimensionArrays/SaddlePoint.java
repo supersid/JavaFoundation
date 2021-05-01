@@ -1,3 +1,8 @@
+/*
+ * You are given a square matrix of size 'n'. You are given n*n elements of the square matrix. 
+ * You are required to find the saddle price of the given matrix and print the saddle price. 
+ * The saddle price is defined as the least price in the row but the maximum price in the column of the matrix.
+ */
 package multiDimensionArrays;
 
 import java.util.Scanner;
@@ -22,7 +27,7 @@ public class SaddlePoint {
 			int min_col = 0;
 			for (int j = 0; j < arr[0].length; j++) {
 				if (arr[i][j] < arr[i][min_col]) {
-					min_col = j;
+					min_col = j; // potential location for minimum col value
 				}
 			}
 			boolean psp = true;
