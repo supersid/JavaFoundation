@@ -1,3 +1,9 @@
+/*
+ * The logic to solve this question is
+ * Convert the shell values into 1-D array
+ * Rotate the array with r value
+ * The use the resulted 1-D array back into the matrix in that particular shell.
+ */
 package multiDimensionArrays;
 
 import java.util.Scanner;
