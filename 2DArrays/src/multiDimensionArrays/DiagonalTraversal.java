@@ -1,3 +1,19 @@
+// Example input
+//	11	12	13	14
+//	21	22	23	24
+//	31	32	33	34
+//	41	42	43	44
+// Output
+//	11
+//	22
+//	33
+//	44
+//	12
+//	23
+//	34
+//	13
+//	24
+//	14
 package multiDimensionArrays;
 
 import java.util.Scanner;
