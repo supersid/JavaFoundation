@@ -1,3 +1,6 @@
+/*
+ * The input parameters are in order of reducing order of number, source, destination, helper
+ */
 package recursion;
 
 import java.util.Scanner;
@@ -7,9 +10,9 @@ public class TowerOfHanoi {
 	public static void main(String[] args) {
 		Scanner scn = new Scanner(System.in);
 		int n = scn.nextInt();
-		int n1 = scn.nextInt();
-		int n2 = scn.nextInt();
-		int n3 = scn.nextInt();
+		int n1 = scn.nextInt(); // tower 1
+		int n2 = scn.nextInt(); // tower 2
+		int n3 = scn.nextInt(); // tower 3
 		scn.close();
 		towerOfHanoi(n, n1, n2, n3);
 	}
