@@ -1,3 +1,7 @@
+/*
+ * I have added the keywords "Pre", "Post" and "In" to give more clarification.
+ * To submit the code in pepcoding portal remove these keywords.
+ */
 package recursion;
 
 import java.util.Scanner;
@@ -15,10 +19,10 @@ public class PrintZigZag {
 		if(n == 0) {
 			return;
 		}
-		System.out.print(n + " ");
+		System.out.print("Pre" + n + " ");
 		pzz(n-1);
-		System.out.print(n + " ");
+		System.out.print("In" + n + " ");
 		pzz(n-1);
-		System.out.print(n + " ");
+		System.out.print("Post" + n + " ");
 	}
 }
