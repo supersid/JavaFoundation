@@ -12,11 +12,11 @@ public class DisplayArrayReverse {
 			arr[i] = scn.nextInt();
 		}
 		scn.close();
-		displayArrReverse(arr, n-1);
+		displayArrReverse(arr, n - 1);
 	}
 
 	public static void displayArrReverse(int[] arr, int idx) {
-		if(idx < 0) {
+		if (idx < 0) {
 			return;
 		}
 		System.out.println(arr[idx]);
