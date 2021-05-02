@@ -16,7 +16,7 @@ public class DisplayArray {
 	}
 
 	public static void displayArr(int[] arr, int idx) {
-		if(idx == arr.length) {
+		if (idx == arr.length) {
 			return;
 		}
 		System.out.println(arr[idx]);
