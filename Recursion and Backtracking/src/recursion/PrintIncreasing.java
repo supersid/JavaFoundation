@@ -1,3 +1,7 @@
+/*
+ * Faith -> n(5) = 1,2,3,4,5
+ * Expectation -> n(4) + 5
+ */
 package recursion;
 
 import java.util.Scanner;
