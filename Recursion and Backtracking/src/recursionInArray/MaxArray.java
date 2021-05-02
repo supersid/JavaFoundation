@@ -1,3 +1,8 @@
+/*
+ * Expectation -> maxOfArray(arr, 0) i.e return max value from index 0 to end
+ * Faith -> maxOfArray(arr, idx + 1) i.e return max value from index 1 to end and so on.
+ * then compare index 0 and the remaining elements.
+ */
 package recursionInArray;
 
 import java.util.Scanner;
@@ -33,9 +38,9 @@ public class MaxArray {
 		if(idx == arr.length - 1) {
 			return arr[idx];
 		}
-		int maxmo = maxOfArray(arr, idx + 1);
-		if(maxmo > arr[idx]) {
-			return maxmo;
+		int maxInSmallerArray = maxOfArray(arr, idx + 1);
+		if(maxInSmallerArray > arr[idx]) {
+			return maxInSmallerArray;
 		} else {
 			return arr[idx];
 		}
