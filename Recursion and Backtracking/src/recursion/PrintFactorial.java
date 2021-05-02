@@ -1,3 +1,7 @@
+/*
+ * Expectation -> n(5) = 5 * 4 * 3 * 2 * 1
+ * Faith -> 5 * n(4) where n(4) will be calculated
+ */
 package recursion;
 
 import java.util.Scanner;
@@ -12,11 +16,9 @@ public class PrintFactorial {
 	}
 
 	public static int factorial(int n) {
-		if(n == 1) {
+		if (n == 1) {
 			return n;
 		}
-		int fmo = factorial(n-1);
-		int factorial = n * fmo;
-		return factorial;
+		return n * factorial(n - 1);
 	}
 }
