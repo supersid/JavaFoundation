@@ -1,3 +1,8 @@
+/*
+ * Logic here is 
+ * x^n = x^n/2 * x^n/2, where n is even
+ * x^n = x^n/2 * x^n/2 * x, where n is odd
+ */
 package recursion;
 
 import java.util.Scanner;
@@ -14,15 +19,13 @@ public class PowerLogarithmic {
 	}
 
 	public static int power(int x, int n) {
-		if(n == 0) {
+		if (n == 0) {
 			return 1;
 		}
-		int xnbt = power(x, n/2);
-		int xn = xnbt * xnbt;
-		
-		if(n % 2 == 1) {
-			xn = xn * x;
+		if (n % 2 == 0) {
+			return power(x, n / 2) * power(x, n / 2);
+		} else {
+			return power(x, n / 2) * power(x, n / 2) * x;
 		}
-		return xn;
 	}
 }
