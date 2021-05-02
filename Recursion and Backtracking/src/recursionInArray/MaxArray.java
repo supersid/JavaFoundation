@@ -45,5 +45,4 @@ public class MaxArray {
 			return arr[idx];
 		}
 	}
-
 }
