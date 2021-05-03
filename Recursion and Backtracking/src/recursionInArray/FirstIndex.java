@@ -17,17 +17,18 @@ public class FirstIndex {
 	}
 
 	/*
-	 * Method done by me public static int firstIndex(int[] arr, int idx, int x) {
+	 * Method done by me
+	 * public static int firstIndex(int[] arr, int idx, int x) {
 	 * if (idx == arr.length) { return -1; } int num = firstIndex(arr, idx + 1, x);
 	 * if(arr[idx] == x) { return idx; } else { return num; } }
 	 */
 
 	public static int firstIndex(int[] arr, int idx, int x) {
 		if (idx == arr.length) {
-			return -1;
+			return -1; // if number not found and there are no elements left return -1
 		}
 		if (arr[idx] == x) {
-			return idx;
+			return idx; // if number if found return index
 		} else {
 			int num = firstIndex(arr, idx + 1, x);
 			return num;
