@@ -20,22 +20,22 @@ public class PrintAllIndices {
 			System.out.println();
 			return;
 		}
-
 		for (int i = 0; i < iarr.length; i++) {
 			System.out.println(iarr[i]);
 		}
 	}
 
 	public static int[] allIndices(int[] arr, int x, int idx, int fsf) {
-		if(idx == arr.length) {
-			return new int[fsf];			
+		// fsf is index used to store the found values
+		if (idx == arr.length) {
+			return new int[fsf];
 		}
-		if(x == arr[idx]) {
-			int[] iarr = allIndices(arr, x, idx + 1, fsf + 1);
+		if (x == arr[idx]) {
+			int[] iarr = allIndices(arr, x, idx + 1, fsf + 1); // if value is found increase fsf value
 			iarr[fsf] = idx;
 			return iarr;
 		} else {
-			int[] iarr = allIndices(arr, x, idx + 1, fsf);
+			int[] iarr = allIndices(arr, x, idx + 1, fsf); // if the value is not found then do not change fsf value
 			return iarr;
 		}
 	}
