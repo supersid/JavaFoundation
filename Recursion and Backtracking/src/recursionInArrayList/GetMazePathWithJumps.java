@@ -4,6 +4,9 @@
  * In a single move you are allowed to jump 1 or more steps horizontally (as h1, h2, .. ), or 1 or more steps vertically (as v1, v2, ..) or 1 or more steps diagonally (as d1, d2, ..). 
  * Complete the body of getMazePath function - without changing signature - to get the list of all paths that can be used to move from top-left to bottom-right.
  */
+// Example
+// Input -> n = 2, m = 2
+// Output -> [h1v1, v1h1, d1]
 package recursionInArrayList;
 
 import java.util.ArrayList;
@@ -24,15 +27,16 @@ public class GetMazePathWithJumps {
 	// dr - destination row
 	// dc - destination column
 	public static ArrayList<String> getMazePaths(int sr, int sc, int dr, int dc) {
-		if (sr > dr || sc > dc) {
+		if (sr > dr || sc > dc) { // cannot escape the grid
 			ArrayList<String> baseCase = new ArrayList<String>();
 			return baseCase;
 		}
-		if (sr == dr && sc == dc) {
+		if (sr == dr && sc == dc) { // if you have reached the end point then don't move because you are already there
 			ArrayList<String> baseCase = new ArrayList<String>();
 			baseCase.add("");
 			return baseCase;
 		}
+		// we use count variable because number of steps are not fixed like previous question
 		ArrayList<String> mazePaths = new ArrayList<String>();
 		for (int count = 1; count <= dc - sc; count++) {
 			ArrayList<String> horizontal = getMazePaths(sr, sc + count, dr, dc);
