@@ -1,7 +1,10 @@
 /*
- * 1. You are given a number n and a number m representing number of rows and columns in a maze.
- * 2. You are standing in the top-left corner and have to reach the bottom-right corner. Only two moves are allowed 'h' (1-step horizontal) and 'v' (1-step vertical).
+ * You are given a number n and a number m representing number of rows and columns in a maze.
+ * You are standing in the top-left corner and have to reach the bottom-right corner. Only two moves are allowed 'h' (1-step horizontal) and 'v' (1-step vertical).
  */
+//	Example
+//	Input -> n = 3, m = 3
+//	Output -> [hhvv, hvhv, hvvh, vhhv, vhvh, vvhh]
 package recursionInArrayList;
 
 import java.util.ArrayList;
@@ -21,28 +24,18 @@ public class GetMazePath {
 	// sc - source column
 	// dr - destination row
 	// dc - destination column
-//	public static ArrayList<String> getMazePaths(int sr, int sc, int dr, int dc) {
-//		if (sc > dc || sr > dr) {
-//			ArrayList<String> baseCase = new ArrayList<String>();
-//			return baseCase;
-//		}
-//		if (sr == dr && sc == dc) {
-//			ArrayList<String> baseCase = new ArrayList<String>();
-//			baseCase.add("");
-//			return baseCase;
-//		}
-//		ArrayList<String> horizontal = getMazePaths(sr, sc + 1, dr, dc);
-//		ArrayList<String> vertical = getMazePaths(sr + 1, sc, dr, dc);
-//		ArrayList<String> mazePath = new ArrayList<String>();
-//		for (String string : horizontal) {
-//			mazePath.add("h" + string);
-//		}
-//		for (String string : vertical) {
-//			mazePath.add("v" + string);
-//		}
-//		return mazePath;
-//	}
-
+	/*
+	 * public static ArrayList<String> getMazePaths(int sr, int sc, int dr, int dc)
+	 * { if (sc > dc || sr > dr) { ArrayList<String> baseCase = new
+	 * ArrayList<String>(); return baseCase; } if (sr == dr && sc == dc) {
+	 * ArrayList<String> baseCase = new ArrayList<String>(); baseCase.add("");
+	 * return baseCase; } ArrayList<String> horizontal = getMazePaths(sr, sc + 1,
+	 * dr, dc); ArrayList<String> vertical = getMazePaths(sr + 1, sc, dr, dc);
+	 * ArrayList<String> mazePath = new ArrayList<String>(); for (String string :
+	 * horizontal) { mazePath.add("h" + string); } for (String string : vertical) {
+	 * mazePath.add("v" + string); } return mazePath; }
+	 */
+	
 	// Method by Sumeet sir
 	public static ArrayList<String> getMazePaths(int sr, int sc, int dr, int dc) {
 		if ((sr == dr) && (sc == dc)) {
