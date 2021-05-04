@@ -1,3 +1,8 @@
+/*
+ * This is a level and option approach
+ * No memory space is required to store the data
+ * Answer will be printed going upwards in euler graph
+ */
 package recursionOnWayUp;
 
 import java.util.Scanner;
@@ -18,7 +23,7 @@ public class PrintSubsequence {
 		}
 		char ch = str.charAt(0);
 		String remString = str.substring(1);
-		printSS(remString, ans + ch);
-		printSS(remString, ans + "");
+		printSS(remString, ans + ch); // option yes
+		printSS(remString, ans + ""); // option no
 	}
 }
