@@ -15,11 +15,11 @@ public class PrintStairPaths {
 		if (n == 0) {
 			System.out.println(path);
 		}
-		if (n < 0) {
+		if (n < 0) { // you cannot go anywhere from basement
 			return;
 		}
-		printStairPaths(n - 1, path + "1");
-		printStairPaths(n - 2, path + "2");
-		printStairPaths(n - 3, path + "3");
+		printStairPaths(n - 1, path + "1"); // for 1 step
+		printStairPaths(n - 2, path + "2"); // for 2 step
+		printStairPaths(n - 3, path + "3"); // for 3 step
 	}
 }
