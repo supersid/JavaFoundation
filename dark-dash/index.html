@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-toggleable">
+      <button class="navbar-toggler" onclick="myFunc()" type="button" data-toggle="collapse"data-target="#navTog" aria-controls="navTog" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon mt-auto"></span>
+      </button>
+  <a class="" href="#" >DMR</a>
+
+  <div class="collapse navbar-collapse" id="navTog">
+    <ul class="navbar-nav mx-auto  mt-2 mt-lg-0" style="flex: 0.5; justify-content: space-around; ">
+      <li class="nav-item active-3">
+        <a class="nav-link" href="#" >Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Hospitals</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Reports</a>
+      </li>
+    </ul>
+  
+  </div>
+  <ul class="navbar-nav"  id="tog" >
+    <li class="dropdown" style="justify-self: right;">
+        <a href="#" class="navbar-brand mr-0" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false"> 
+            <span class="fa-stack fa-2x" style="font-size:1em; color:var(--color-text);">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fas fa-user fa-stack-1x fa-inverse" style="color:var(--color-inverted-text)"></i>
+          </span> 
+        </a>
+        <div class="dropdown-menu  dropdown-menu-right position-absolute " aria-labelledby="navbarDropdown" style="background-color: var(--bg-panel); color:var(--color-text); float: right;">
+            
+            <a class="dropdown-item" href="#">Profile</a>
+            <a class="dropdown-item" href="#">Action</a>
+            <a href="#" class="dropdown-item align-left">Toggle<input type="checkbox" id="switch" name="theme" /><label for="switch"></label></a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Logout</a>
+        </div>
+    </li>
+  </ul>
+</nav>
+<div class="container mt-5">
+    <div class="row m-0  justify-content-around">
+
+        <div class="bg-red-gradient white-force col-md-2 py-2 mt-2 panel rounded-2 text-center" >
+            <i class="fas fa-file " style="font-size:2.5em;"></i>
+            <h2  style="font-weight: 200;">11</h2>
+            <p >Reports</p>
+        </div>
+        <div class="bg-green-gradient white-force col-md-2 py-2 mt-2  panel rounded-2 text-center" >
+            <i class="fas fa-user-md" style="font-size:2.5em"></i>
+            <h2 style="font-weight: 200;">5</h2>
+            <p>Consulted Doctors</p>
+        </div>
+        <div class="col-md-2 white-force bg-blue-gradient py-2 mt-2 panel rounded-2 text-center" >
+            <i class="fas fa-h-square" style="font-size:2.5em"></i>
+            <h2 style="font-weight: 200;">2</h2>
+            <p>Hospitals</p>
+        </div>
+        <div class="col-md-2 bg-4-gradient py-2 mt-2 panel rounded-2 text-center" >
+            <i class="fas fa-users" style="font-size:2.5em"></i>
+            <h2 style="font-weight: 200;">15</h2>
+            <p>Visits</p>
+        </div>
+    </div>
+    <h1 class="mt-5 ml-1">Visit Stats</h1>
+    <div class="row panel rounded-2 m-0">
+    
+            <div class="p-4 col-sm-12 col-lg-6 m-0" >
+                <canvas id="chart1"></canvas>
+        </div>
+            <div class=" p-4 col-sm-12 col-lg-6 m-0 ">
+                <canvas id="chart2"></canvas>
+        </div>        
+    </div>
+
+    <h1 class=" mt-5 m-0">Glucose-Fasting Stats</h1>
+    <div class="row m-0">
+      <div class="panel rounded-2 col m-0" style="position: relative;">
+          <canvas id="chart3"></canvas>
+      </div>
+  </div>
+
+    <h1 class=" mt-5 m-0">Glucose-Fasting Stats</h1>
+    <div class="row  m-0">
+      <div class="panel rounded-2 col m-0" style="position: relative;">
+          <canvas id="lineChart"></canvas>
+      </div>
+  </div>
+  <footer class="mt-5 w-100"> 
+    <div class="footer text-center panel" >
+    <p style="color: var(--color-text)" >MAJOR Project</p>
+  </div>
+</footer>
+
+    </div>
+
+
+   
+
+</body>
+<script src="https://kit.fontawesome.com/3c44c1fb39.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</html>
+
